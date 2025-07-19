@@ -1,0 +1,149 @@
+/* Base styles */
+body {
+  font-family: 'Quicksand', sans-serif;
+  color: #2F5241;
+}
+
+/* Cloud-like container styling */
+.cloud-container {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 30px;
+  box-shadow: 
+    0 8px 30px rgba(0, 0, 0, 0.05),
+    inset 0 -3px 10px rgba(147, 112, 219, 0.1);
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.8);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(230, 230, 250, 0.2);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, #9370DB, #2F5241);
+  border-radius: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(45deg, #7B68EE, #1F3A2D);
+}
+
+/* Animations */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.float-animation {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes pulse-soft {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.02);
+  }
+}
+
+.pulse-animation {
+  animation: pulse-soft 4s infinite;
+}
+
+/* Logo styling */
+.logo-text {
+  background: linear-gradient(45deg, #2F5241, #9370DB);
+  -webkit-background-clip: text;
+  color: transparent;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+}
+
+/* Button styling */
+.button-cloud {
+  background: linear-gradient(135deg, #FFFFFF, #F8F9FE);
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 
+    0 4px 15px rgba(0, 0, 0, 0.05),
+    inset 0 -2px 5px rgba(147, 112, 219, 0.1);
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.button-cloud:hover {
+  transform: translateY(-2px);
+  box-shadow: 
+    0 6px 20px rgba(0, 0, 0, 0.08),
+    inset 0 -2px 5px rgba(147, 112, 219, 0.2);
+}
+
+/* Chibi character styling */
+.chibi-preview {
+  background: linear-gradient(135deg, #FFFFFF, #F8F9FE);
+  border-radius: 30px;
+  box-shadow: 
+    0 8px 30px rgba(0, 0, 0, 0.05),
+    inset 0 -3px 10px rgba(147, 112, 219, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  overflow: hidden;
+}
+
+.chibi-head {
+  width: 120px;
+  height: 120px;
+  border-radius: 60%;
+  position: relative;
+  overflow: hidden;
+}
+
+.chibi-body {
+  width: 80px;
+  height: 100px;
+  position: relative;
+}
+
+/* Input styling */
+.input-cloud {
+  background: rgba(255, 255, 255, 0.9);
+  border: 2px solid rgba(147, 112, 219, 0.2);
+  border-radius: 15px;
+  padding: 10px 15px;
+  transition: all 0.3s ease;
+}
+
+.input-cloud:focus {
+  outline: none;
+  border-color: rgba(147, 112, 219, 0.5);
+  box-shadow: 0 0 0 3px rgba(147, 112, 219, 0.1);
+}
+
+/* Card styling */
+.card-cloud {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  box-shadow: 
+    0 4px 15px rgba(0, 0, 0, 0.05),
+    inset 0 -2px 5px rgba(147, 112, 219, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  transition: all 0.3s ease;
+}
+
+.card-cloud:hover {
+  transform: translateY(-3px);
+  box-shadow: 
+    0 6px 20px rgba(0, 0, 0, 0.08),
+    inset 0 -2px 5px rgba(147, 112, 219, 0.2);
+}
